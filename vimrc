@@ -234,8 +234,9 @@ Bundle "javascrit.vim"
 Bundle "ruby.vim"
 Bundle "Command-T"
 Bundle "The-NERD-tree"
-
 map <C-e> :NERDTreeToggle <CR>
+Bundle 'railscasts'
+colorscheme railscasts
 
 " " }}}
 
