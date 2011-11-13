@@ -158,11 +158,6 @@ map <C-l> :tabnext<CR>
 " Esc
 inoremap ;; <Esc>
   
-" vertical split with CommandT
-nnoremap <leader>v :exec ':vnew \| CommandT'<CR>
-" and without
-nnoremap <leader>V :vnew<CR>
-
 if has('mac')
 	set macmeta
 
@@ -191,12 +186,14 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Colorscheme
-Bundle 'desert.vim'
-colorscheme desert
+Bundle 'molokai'
+colorscheme molokai
 
 " Programming
 Bundle 'jQuery'
-Bundle 'tpope/vim-rails'
+Bundle 'rails.vim'
+Bundle 'ruby.vim'
+Bundle 'vim-coffee-script'
 
 " Snippets
 Bundle 'gmarik/snipmate.vim'
@@ -204,19 +201,12 @@ Bundle 'honza/snipmate-snippets'
 
 " Syntax highlight
 Bundle 'cucumber.zip'
-Bundle 'git@github.com:gmarik/vim-markdown.git'
-
-" Git integration
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-fugitive'
+Bundle 'Markdown'
 
 " (HT|X)ml tool
 Bundle 'ragtag.vim'
 
 " Utility
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
 
 Bundle 'tlib'
 Bundle 'tComment'
@@ -230,9 +220,7 @@ Bundle 'FuzzyFinder'
 let g:fuf_modesDisable = []
 nnoremap <leader>ff :FufFile<CR>
 
-Bundle "vim-coffee-script"
-Bundle "ruby.vim"
-Bundle "Command-T"
+" NERDTree
 Bundle "The-NERD-tree"
 map <C-e> :NERDTreeToggle <CR>
 
