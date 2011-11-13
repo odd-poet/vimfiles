@@ -108,11 +108,6 @@ if has('gui_running')
 	set co=100
 	set lines=30
 
-
-	" Colorscheme
-	Bundle 'molokai'
-	colorscheme molokai
-
   " Fonts
   if has('mac')
 		set guifont=NanumGothicCoding:h15
@@ -197,9 +192,17 @@ Bundle 'rails.vim'
 Bundle 'ruby.vim'
 Bundle 'vim-coffee-script'
 
+" Colorscheme
+Bundle 'molokai'
+if has('gui_running')
+	colorscheme molokai
+endif
+
 " Snippets
-Bundle 'gmarik/snipmate.vim'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
 Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
 
 " Syntax highlight
 Bundle 'cucumber.zip'
