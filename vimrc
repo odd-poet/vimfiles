@@ -105,10 +105,11 @@ map <silent> <F12> :set invlist<CR>
 
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
-
+	set co=120
+	set lines=30
   " Fonts
   if has('mac')
-		set guifont=Andale\ Mono:h13
+		set guifont=NanumGothicCoding:h15
 	elseif has('win32')
 		set guifont=NanumGothicCoding:h11
 	else
@@ -116,7 +117,7 @@ if has('gui_running')
   end
 
   if has('mac')
-		set noantialias
+		"set noantialias
 		" set fullscreen
 		set fuoptions=maxvert,maxhorz ",background:#00AAaaaa
   endif
