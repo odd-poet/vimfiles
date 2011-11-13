@@ -105,7 +105,7 @@ map <silent> <F12> :set invlist<CR>
 
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
-	set co=120
+	set co=100
 	set lines=30
   " Fonts
   if has('mac')
@@ -231,7 +231,6 @@ let g:fuf_modesDisable = []
 nnoremap <leader>ff :FufFile<CR>
 
 Bundle "vim-coffee-script"
-Bundle "javascrit.vim"
 Bundle "ruby.vim"
 Bundle "Command-T"
 Bundle "The-NERD-tree"
