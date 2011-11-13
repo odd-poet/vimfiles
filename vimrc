@@ -193,9 +193,9 @@ Bundle 'ruby.vim'
 Bundle 'vim-coffee-script'
 
 " Colorscheme
-Bundle 'molokai'
+Bundle 'railscasts'
 if has('gui_running')
-	colorscheme molokai
+	colorscheme railscasts
 endif
 
 " Snippets
