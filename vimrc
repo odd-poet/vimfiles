@@ -80,9 +80,10 @@ set shortmess=atI             " shortens messages
 set showcmd                   " display an incomplete command in statusline
 
 set statusline=%<%f\          " custom statusline
+set stl+=%m%r									" modified tag, readonly tag
 set stl+=[%{&ff}]             " show fileformat
 set stl+=[%{&fenc}]           " show fileencoding
-set stl+=%y%m%r%=
+set stl+=%y%=									" show type
 set stl+=(%l:%c)char:%b\ %P
 
 
