@@ -107,6 +107,12 @@ if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
 	set co=100
 	set lines=30
+
+
+	" Colorscheme
+	Bundle 'molokai'
+	colorscheme molokai
+
   " Fonts
   if has('mac')
 		set guifont=NanumGothicCoding:h15
@@ -184,10 +190,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-
-" Colorscheme
-Bundle 'molokai'
-colorscheme molokai
 
 " Programming
 Bundle 'jQuery'
