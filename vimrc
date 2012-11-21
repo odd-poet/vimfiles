@@ -60,9 +60,6 @@ set cinwords+=for,switch,case
 " Visual "{{{
 syntax on                      " enable syntax
 
-set mouse=a "enable mouse in GUI mode
-set mousehide                 " Hide mouse after chars typed
-
 set nonumber                  " line numbers Off
 set showmatch                 " Show matching brackets.
 set matchtime=2               " Bracket blinking.
@@ -106,8 +103,11 @@ map <silent> <F12> :set invlist<CR>
 
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
-	set co=100
-	set lines=30
+  set co=100
+  set lines=30
+  set mouse=a "enable mouse in GUI mode
+  set mousehide                 " Hide mouse after chars typed
+
 
   " Fonts
   if has('mac')
