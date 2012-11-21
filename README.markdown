@@ -8,3 +8,12 @@ shell에서 아래 명령을 실행한다.
 curl -L https://raw.github.com/odd-poet/vimfiles/master/install.sh | bash 
 ```
 
+## 기타 
+
+bash 설정은 ``bash-it``을 사용한다. 참고: https://github.com/revans/bash-it
+
+```
+git clone http://github.com/revans/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+```
+
