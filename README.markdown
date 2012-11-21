@@ -1,4 +1,4 @@
-## How to install
+## vim설정 설치
 
 서버에 기본 vimrc설정과 플러그인을 관리하는 vundle을 설치해준다. 
 
