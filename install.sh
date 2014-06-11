@@ -9,7 +9,7 @@ echo
 # install .vimrc
 echo "Download default .vimrc "
 echo "--------------------------------------------------------"
-curl -o ~/.vimrc "https://raw.github.com/odd-poet/vimfiles/master/vimrc"
+curl -o ~/.vimrc "https://raw.githubusercontent.com/odd-poet/vimfiles/master/vimrc"
 
 # install plugins
 echo "install plugins"
