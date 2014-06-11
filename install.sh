@@ -11,4 +11,7 @@ echo "Download default .vimrc "
 echo "--------------------------------------------------------"
 curl -o ~/.vimrc "https://raw.github.com/odd-poet/vimfiles/master/vimrc"
 
+# install plugins
+echo "install plugins"
+vim +PluginInstall +qall
 echo "Done!"
