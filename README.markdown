@@ -5,7 +5,7 @@
 shell에서 아래 명령을 실행한다. 
 
 ```
-curl -L https://raw.github.com/odd-poet/vimfiles/master/install.sh | bash 
+curl -L https://raw.githubusercontent.com/odd-poet/vimfiles/master/install.sh | bash 
 ```
 
 
