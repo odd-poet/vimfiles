@@ -116,17 +116,17 @@ if has('gui_running')
 
   " Fonts
   if has('mac')
-		set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
-	elseif has('win32')
-		set guifont=NanumGothicCoding:h11
-	else
-	  set guifont=Terminus:h16
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
+  elseif has('win32')
+    set guifont=NanumGothicCoding:h11
+  else
+    set guifont=Terminus:h16
   end
 
   if has('mac')
-		"set noantialias
-		" set fullscreen
-		set fuoptions=maxvert,maxhorz ",background:#00AAaaaa
+    "set noantialias
+    " set fullscreen
+    set fuoptions=maxvert,maxhorz ",background:#00AAaaaa
   endif
 endif
 
@@ -246,7 +246,11 @@ filetype plugin indent on    " required
 "========================
 
 " airline
-let g:airline_powerline_fonts = 1
+if has("mac")
+  let g:airline_powerline_fonts = 1
+else
+  let g:airline_powerline_fonts = 0
+endif
 let g:airline_theme='wombat'
 
 " NERD tree
