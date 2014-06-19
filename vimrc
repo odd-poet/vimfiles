@@ -106,6 +106,8 @@ set listchars+=trail:.
 set listchars+=extends:>,precedes:<
 map <silent> <F10> :set invlist<CR>
 
+set mouse=a
+
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
   set co=100
@@ -213,6 +215,17 @@ Plugin 'bling/vim-airline'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+
+" snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'bonsaiben/bootstrap-snippets'
+
+" AutoComplPop
+Plugin 'AutoComplPop'
+
 
 "------------------
 " End of Custom plugins
