@@ -169,13 +169,6 @@ map <C-l> :tabnext<CR>
 " Esc
 inoremap ;; <Esc>
 
-if has('mac')
-	set macmeta
-
-	" Copy whole line
-	nnoremap <silent> <D-c> yy
-endif
-
 ab #e # encoding: UTF-8
 
 
