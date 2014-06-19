@@ -240,7 +240,7 @@ filetype plugin indent on    " required
 
 " airline
 
-if has('gui_running')
+if has('mac')
   let g:airline_powerline_fonts = 1
 endif
 let g:airline_theme='wombat'
