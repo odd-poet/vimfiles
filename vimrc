@@ -106,15 +106,14 @@ set listchars+=trail:.
 set listchars+=extends:>,precedes:<
 map <silent> <F10> :set invlist<CR>
 
-set mouse=a "enable mouse
-
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
   set co=100
   set lines=30
+  set mouse=a "enable mouse
   set mousehide                 " Hide mouse after chars typed
 
-
+  
   " Fonts
   if has('mac')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
@@ -247,10 +246,9 @@ filetype plugin indent on    " required
 "========================
 
 " airline
-if has("mac")
+
+if has('gui_running')
   let g:airline_powerline_fonts = 1
-else
-  let g:airline_powerline_fonts = 0
 endif
 let g:airline_theme='wombat'
 
