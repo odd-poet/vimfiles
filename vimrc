@@ -106,11 +106,12 @@ set listchars+=trail:.
 set listchars+=extends:>,precedes:<
 map <silent> <F10> :set invlist<CR>
 
+set mouse=a "enable mouse
+
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
   set co=100
   set lines=30
-  set mouse=a "enable mouse in GUI mode
   set mousehide                 " Hide mouse after chars typed
 
 
