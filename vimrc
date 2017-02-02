@@ -118,9 +118,9 @@ if has('gui_running')
   
   " Fonts
   if has('mac')
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h15
+    set guifont=Fira\ Code:h15
   elseif has('win32')
-    set guifont=NanumGothicCoding:h11
+    set guifont=Fira\ Code:h15
   else
     set guifont=Terminus:h16
   end
@@ -211,7 +211,8 @@ Plugin 'The-NERD-tree'
 Plugin 'altercation/vim-colors-solarized'
 
 " vim-airline (powerline)
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
