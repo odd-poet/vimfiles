@@ -3,7 +3,8 @@
 # install vundle
 echo "Installing vundle (see https://github.com/gmarik/Vundle.vim)"
 echo "--------------------------------------------------------"
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir -p ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo 
 
 # install .vimrc

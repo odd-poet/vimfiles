@@ -64,7 +64,8 @@ set cinwords+=for,switch,case
 "===================
 syntax on                      " enable syntax
 
-set nonumber                  " line numbers Off
+set number                  " line numbers Off
+highlight LineNr guifg=darkGrey ctermfg=darkGrey
 set showmatch                 " Show matching brackets.
 set matchtime=2               " Bracket blinking.
 
@@ -81,12 +82,12 @@ set shortmess=atI             " shortens messages
 set showcmd                   " display an incomplete command in statusline
 
 " now use airline
-"set statusline=%<%f\          " custom statusline
-"set stl+=%m%r									" modified tag, readonly tag
-"set stl+=[%{&ff}]             " show fileformat
-"set stl+=[%{&fenc}]           " show fileencoding
-"set stl+=%y%=									" show type
-"set stl+=(%l:%c)char:%b\ %P
+set statusline=%<%f\          " custom statusline
+set stl+=%m%r									" modified tag, readonly tag
+set stl+=[%{&ff}]             " show fileformat
+set stl+=[%{&fenc}]           " show fileencoding
+set stl+=%y%=									" show type
+set stl+=(%l:%c)char:%b\ %P
 
 
 set foldenable                " Turn on folding
@@ -108,28 +109,12 @@ map <silent> <F10> :set invlist<CR>
 
 set mouse=a
 
-if has('gui_running')
+if has('gui_running') || has('gui_vimr')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
   set co=100
   set lines=30
   set mouse=a "enable mouse
   set mousehide                 " Hide mouse after chars typed
-
-  
-  " Fonts
-  if has('mac')
-    set guifont=Fira\ Code:h15
-  elseif has('win32')
-    set guifont=Fira\ Code:h15
-  else
-    set guifont=Terminus:h16
-  end
-
-  if has('mac')
-    "set noantialias
-    " set fullscreen
-    set fuoptions=maxvert,maxhorz ",background:#00AAaaaa
-  endif
 endif
 
 "===================
@@ -173,7 +158,6 @@ inoremap ;; <Esc>
 
 ab #e # encoding: UTF-8
 
-
 "===================
 " AutoCommands
 "===================
@@ -198,7 +182,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 "------------------
 " Custom plugins
@@ -208,7 +192,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'The-NERD-tree'
 
 " Colorscheme
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'iCyMind/NeoSolarized'
 
 " vim-airline (powerline)
 Plugin 'vim-airline/vim-airline'
@@ -253,19 +237,17 @@ filetype plugin indent on    " required
 "========================
 
 " airline
-
-if has('mac')
-  let g:airline_powerline_fonts = 1
-endif
-let g:airline_theme='wombat'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 " NERD tree
 map <C-e> :NERDTreeToggle <CR>
 
 " colorscheme
-if has('gui_running')
+if has('gui_running') || has('gui_vimr')
   set background=dark
-  colorscheme solarized
+  colorscheme NeoSolarized
 endif
 
 " git gutter
